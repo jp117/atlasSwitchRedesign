@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Atlas Switch</title>
+        {% block head %}{% endblock %}
+
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='vendors/css/normalize.css')}}"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:100,300&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{url_for('static', filename='resources/css/styles.css')}}"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="headingtext">
+                <h1>
+                    Helping to distribute power <br />
+                    throughout new york city
+                </h1>
+            </div>
+        </header>
+        {% block content %}{% endblock %}
+    </body>
+</html>
