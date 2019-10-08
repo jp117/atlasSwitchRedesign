@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<section class="aboutus">
+<section class="aboutus js--section-aboutus" id="aboutus">
     <div class="container">
         <h2>About Us</h2>
         <p>
@@ -28,7 +28,7 @@
         </p>
     </div>
 </section>
-<section class="products">
+<section class="products" id="products">
     <div class="container">
         <h2>Products</h2>
         <ul>
@@ -53,11 +53,18 @@
                 />
                 <p>Panel Board with Integral SPD</p>
             </li>
+            <li>
+                <img
+                    src="{{url_for('static', filename='resources/img/hpc.png')}}"
+                    alt="Switchboard with HPC Switch"
+                />
+                <p>Switchboard</p>
+            </li>
         </ul>
         <ul>
             <li>
                 <img
-                    src="{{url_for('static', filename='resources/img/switchboard.JPG')}}"
+                    src="{{url_for('static', filename='resources/img/switchboard.png')}}"
                     alt="Switchboard"
                 />
                 <p>Switchboard</p>
@@ -72,7 +79,7 @@
         </ul>
     </div>
 </section>
-<section class="contactus">
+<section class="contactus" id="contactus">
     <div class="container">
         <h2>Contact Us</h2>
         <h4>
@@ -80,7 +87,11 @@
             <br />
             Have a job that you need quoted?
             <br />
-            Email <a href="">info@atlasswitch.com</a> or call 516-222-6280
+            <br />
+            Email
+            <a href="mailto:info@atlasswitch.com">info@atlasswitch.com</a>
+            <br />
+            or call 516-222-6280
             <br />
             to speak to a sales engineer.
         </h4>

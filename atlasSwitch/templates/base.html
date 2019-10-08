@@ -27,18 +27,18 @@
         />
     </head>
     <body>
-        <header>
+        <header id="top">
             <nav>
                 <div class="navcon">
-                    <a href="#"
+                    <a href="#top"
                         ><img
                             src="{{url_for('static', filename='resources/img/logo.png')}}"
                             alt="Logo"
                     /></a>
                     <ul>
-                        <a href=""><li>About Us</li></a>
-                        <a href=""><li>Products</li></a>
-                        <a href=""><li>Contact Us</li></a>
+                        <a href="#aboutus"><li>About Us</li></a>
+                        <a href="#products"><li>Products</li></a>
+                        <a href="#contactus"><li>Contact Us</li></a>
                     </ul>
                 </div>
             </nav>
@@ -53,10 +53,10 @@
         <footer>
             <div class="container">
                 <ul>
-                    <a href=""><li>Home</li></a>
-                    <a href=""><li>About Us</li></a>
-                    <a href=""><li>Products</li></a>
-                    <a href=""><li>Contact Us</li></a>
+                    <a href="#top"><li>Home</li></a>
+                    <a href="#aboutus"><li>About Us</li></a>
+                    <a href="#products"><li>Products</li></a>
+                    <a href="#contactus"><li>Contact Us</li></a>
                     <a href=""><li></li></a>
                     <li class="last">
                         Atlas Switch Co., Inc. <br />969 Stewart Ave
@@ -66,5 +66,11 @@
                 <p>&copy; Copyright {{ now.year }} Atlas Switch</p>
             </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <script src="{{url_for('static', filename='vendors/js/jquery.waypoints.min.js')}}"></script>
+        <script src="{{url_for('static', filename='resources/js/script.js')}}"></script>
     </body>
 </html>
