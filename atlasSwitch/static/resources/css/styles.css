@@ -16,11 +16,11 @@ html {
 .container {
     max-width: 1140px;
     margin: auto;
-    min-height: 45vh;
 }
 
 section {
     padding-bottom: 40px;
+    min-height: 45vh;
 }
 
 /* Headings */
@@ -30,11 +30,16 @@ h1 {
     color: rgb(250, 250, 250);
     text-align: center;
     padding-top: 40vh;
+    font-size: 250%;
 }
 
 h2 {
     padding-top: 40px;
     padding-bottom: 25px;
+    text-align: center;
+}
+
+h4 {
     text-align: center;
 }
 
@@ -92,8 +97,18 @@ ul a {
     background-color: rgb(247, 247, 247);
 }
 
+.products .container ul {
+    display: flex;
+}
+
+.products .container ul li {
+    flex: 1;
+}
+
 .products .container ul li img {
     height: 300px;
+    display: block;
+    margin: auto;
 }
 
 .products .container ul li p {
@@ -103,3 +118,26 @@ ul a {
 /* Contact us */
 
 /* Footer */
+footer {
+    min-height: 100px;
+    background-color: rgb(55, 55, 55);
+    color: rgb(250, 250, 250);
+}
+
+footer .container ul {
+    display: flex;
+}
+
+footer .container ul a {
+    flex: 1;
+}
+
+.last {
+    font-size: 80%;
+}
+
+footer .container p {
+    font-size: 80%;
+    text-align: center;
+    padding: 15px 0;
+}
