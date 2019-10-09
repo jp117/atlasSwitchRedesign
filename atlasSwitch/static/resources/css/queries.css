@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1200px) {
+    .aboutus .container {
+        padding: 0 50px;
+    }
+    footer .container {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .products .container ul:nth-child(3) {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+    nav img {
+        padding-left: 25px;
+    }
+
+    .products .container ul {
+        display: block;
+        padding: 0;
+    }
+
+    .products .container ul li {
+        padding-bottom: 50px;
+    }
+
+    .products .container h2 {
+        padding-bottom: 50px;
+    }
+
+    footer .container ul {
+        display: block;
+    }
+
+    .last {
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+}
