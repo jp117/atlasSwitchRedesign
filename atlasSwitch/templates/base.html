@@ -29,6 +29,43 @@
             rel="stylesheet"
             href="{{url_for('static', filename='resources/css/queries.css')}}"
         />
+        <script
+            src="https://kit.fontawesome.com/d045e740de.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="{{url_for('static', filename='resources/favicons/apple-touch-icon.png')}}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="{{url_for('static', filename='resources/favicons/favicon-32x32.png')}}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="{{url_for('static', filename='resources/favicons/favicon-16x16.png')}}"
+        />
+        <link rel="manifest" href="/resources/favicons/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="{{url_for('static', filename='resources/favicons/safari-pinned-tab.svg')}}"
+            color="#5bbad5"
+        />
+        <link
+            rel="shortcut icon"
+            href="{{url_for('static', filename='resources/favicons/favicon.ico')}}"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta
+            name="msapplication-config"
+            content="{{url_for('static', filename='resources/favicons/browserconfig.xml')}}"
+        />
+        <meta name="theme-color" content="#000000" />
     </head>
     <body>
         <header id="top">
@@ -39,11 +76,14 @@
                             src="{{url_for('static', filename='resources/img/logo.png')}}"
                             alt="Logo"
                     /></a>
-                    <ul>
+                    <ul class="js--main-nav">
                         <a href="#aboutus"><li>About Us</li></a>
                         <a href="#products"><li>Products</li></a>
                         <a href="#contactus"><li>Contact Us</li></a>
                     </ul>
+                    <a href="" class="js--nav-icon">
+                        <i class="fas fa-bars"></i>
+                    </a>
                 </div>
             </nav>
             <div class="headingtext">

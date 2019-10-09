@@ -21,6 +21,20 @@
         padding-left: 25px;
     }
 
+    .js--nav-icon {
+        display: inline-block;
+    }
+
+    .navcon ul {
+        display: none;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .navcon ul a li {
+        display: block;
+    }
+
     .products .container ul {
         display: block;
         padding: 0;

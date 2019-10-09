@@ -43,4 +43,21 @@ $(document).ready(function() {
                 }
             }
         });
+
+    /* Mobile nav */
+    $('.js--nav-icon, js--main-nav').click(function(e) {
+        e.preventDefault();
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+
+        if (icon.hasClass('fa-bars')) {
+            icon.addClass('fa-times');
+            icon.removeClass('fa-bars');
+            nav.css('display', 'block');
+        } else {
+            icon.addClass('fa-bars');
+            icon.removeClass('fa-times');
+            nav.hide();
+        }
+    });
 });
