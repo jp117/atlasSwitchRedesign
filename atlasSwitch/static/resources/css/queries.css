@@ -11,12 +11,23 @@
     .products .container ul:nth-child(3) {
         display: block;
     }
+    header {
+        background-attachment: scroll;
+    }
+    h1 {
+        padding-top: 30%;
+    }
+
+    .navcon ul {
+        flex: 1;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     body {
         font-size: 90%;
     }
+
     nav img {
         padding-left: 25px;
     }
@@ -58,4 +69,13 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .navcon a:first-of-type {
+        flex: 2;
+    }
+    .navcon ul {
+        flex: 2;
+    }
+    .js--nav-icon {
+        padding-right: 5px;
+    }
 }

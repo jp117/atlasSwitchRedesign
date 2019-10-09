@@ -4,7 +4,6 @@
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 html {
@@ -60,7 +59,7 @@ header {
         url('../img/NYC_Header.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     background-attachment: fixed;
 }
 
@@ -88,6 +87,7 @@ nav a {
 nav img {
     height: 75px;
     padding-left: 75px;
+    z-index: 9999;
 }
 
 ul {
@@ -114,7 +114,7 @@ ul a {
     left: 0;
     width: 100%;
     background-color: rgba(5, 5, 5, 0.9);
-    z-index: 9999;
+    z-index: 9998;
     height: 100px;
 }
 
